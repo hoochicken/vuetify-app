@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <HelloWorld msg="Das ist ein Attribut, hier kann man Text reinschreiben"/>
+    <HelloWorld msg="Das ist ein Property, die kann dann in der HelloWorld-Komponente dargestellt werden"/>
   </div>
 </template>
 

@@ -18,6 +18,11 @@
     </v-col>
   </v-row>
   <router-view/>
+  <v-row>
+    <v-col class="text-right">
+      Thanks to&nbsp;<a href="https://hotpot.ai/art-generator" target="_blank">hotpot.ai/art-generator</a>&nbsp;;-)
+    </v-col>
+  </v-row>
 </template>
 
 <style>
@@ -30,6 +35,9 @@
   margin: 0 auto;
 }
 
+p {
+  margin-bottom: 30px;
+}
 
 nav {
   padding: 30px;

@@ -3,19 +3,25 @@
     <v-row>
       <v-col class="mb-4">
         <p v-if="randomGegenstand.length > 0">
-          <strong>{{randomGegenstand}}</strong>
+          <strong>{{ randomGegenstand }}</strong>
         </p>
         <p v-else>
           <strong>Es gibt noch keinen Gegensatz, musstu klickn ...</strong>
         </p>
         <p>
-          So stellst man eine Variable dar (Doppel-Schweif-Klammern):
-          <br />
-          {{gegenstaende}}
+          Ein Button:
+          <v-btn class="v-btn--rounded v-btn--border" color="blue-grey" v-on:click="machWas()">Gegenstand erzeugen
+          </v-btn>
         </p>
         <p>
-          Ein Button: <v-btn v-on:click="machWas()">Gegenstand erzeugen</v-btn>
+          So stellst man eine Variable dar (Doppel-Schweif-Klammern):
+          <br/>
+          {{ gegenstaende }}
         </p>
+        <p>
+          {{ msg }}
+        </p>
+
       </v-col>
     </v-row>
   </v-container>
@@ -26,11 +32,13 @@
 export default {
   name: 'HelloWorld',
 
+  props: ['msg'],
+
   /* hier werden die variablen, die dargestellt werden sollen, definiert */
   data: () => ({
     textvar: 'lasdhkajhdkahdkjhaskd',
     randomGegenstand: '',
-    gegenstaende: ['Topf', 'Nadel', 'Brat-Hühnchen', 'Pfanne', 'Tasse', ],
+    gegenstaende: ['Topf', 'Nadel', 'Brat-Hühnchen', 'Pfanne', 'Tasse',],
     eigennschaft: ['alt', 'neu', 'müffelt ein bisschen',],
   }),
   methods: {
