@@ -1,7 +1,7 @@
 # vuetify-app
 
 * install npm on windows
-* go to folder
+* `cd my-app`
 * `npm install`
 * `npm run serve`
 * go to http://localhost:8080/
